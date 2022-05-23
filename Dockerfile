@@ -12,4 +12,4 @@ FROM scratch
 WORKDIR /app
 COPY --from=builder /go/app /app
 
-RUN [ "./hello" ]
+CMD [ "./hello" ]
